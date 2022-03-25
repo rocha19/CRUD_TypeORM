@@ -1,0 +1,39 @@
+| typeorm migration |
+yarn typeorm migration:create -n <name> //cria um arquivo (migrations)
+yarn typeorm migration:run //cria as tabelas
+yarn typeorm migration:revert //excluir as tabelas
+
+| typeorm-model-generator |
+
+|MySQL|
+npx/yarn typeorm-model-generator -h localhost -d tempdb -u sa -x !Passw0rd -e mssql -o .
+
+|PostgreSQL|
+npx/yarn typeorm-model-generator -h localhost -d postgres -u postgres -x !Passw0rd -e postgres -o . -s public --ssl
+
+| Imunekids/imunik |
+yarn typeorm-model-generator -h motty.db.elephantsql.com -d eclcuezx -u eclcuezx -x GopMttHf1cRbMo48vY6WQMXGF2mgOX4b -e postgres -o ./src/typegen -s public
+
+| GTI CLONE REPOSITORY |
+git clone --branch <branchname> <remote-repo-url>
+
+[
+	{
+		"id": "5e798cbb-c426-46e8-8f42-93df0ed42469",
+		"name": "cartão de ciclano",
+		"description": "cartão de vacinação",
+		"created_at": "2022-03-24T18:38:29.230Z"
+	},
+	{
+		"id": "089b5e4b-63c8-48e5-8ed0-36af66c7613f",
+		"name": "cartão de baltrano",
+		"description": "cartão de vacinação",
+		"created_at": "2022-03-24T18:38:36.226Z"
+	},
+	{
+		"id": "b46dfa12-8c7c-43d6-acde-8c20bb96531c",
+		"name": "cartão de fulano",
+		"description": "cartão de vacinação",
+		"created_at": "2022-03-24T18:38:43.835Z"
+	}
+]
